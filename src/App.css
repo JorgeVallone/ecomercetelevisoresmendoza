@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  background-color: #61dafb;
+}
+
+.menu li ul{
+  display: none;
+  position: absolute;
+  min-width: 100px;
+}
+
+.menu li a{
+  color:white;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu li a:hover{
+  background-color: blue;
+  }
+
+.menu li{
+float: left;
+margin-left: 80px;
+
+}
+.menu li:hover > ul{
+display: block;
+}
+nav .imagen img{
+width: 80px;
+height: 70px;
+margin: 10px;
+
+}
