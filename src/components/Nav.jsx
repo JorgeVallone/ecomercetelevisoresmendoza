@@ -6,10 +6,14 @@ const Nav = () => {
         
         
         <ul>
-        <label for="" className="imagen">
+        <label for="" className="imagen" >
+         
+        
         <a href=""> <img src="https://previews.123rf.com/images/artqu/artqu1607/artqu160700053/61574630-occhio-creativo-concetto-di-vettore.jpg" alt=""/>  </a>
+        
+        
         </label>
-
+        
           <li><a href="#" className= "enlace">Inicio</a>
           <ul>
                 <li><a href="#" className= "enlace">Televisores Led</a></li>
