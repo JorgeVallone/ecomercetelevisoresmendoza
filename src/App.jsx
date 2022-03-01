@@ -4,7 +4,7 @@ import CartWidget from './components/CartWidget'
 import ComponenteContenedor from './components/ItemListContainer/ComponenteContenedor'
 import Nav from './components/Nav'
 import TituloApp from './components/TituloApp'
-
+import { useState } from 'react';
 
 
 
@@ -13,6 +13,8 @@ function App() {
  
 const style = { backgroundColor:'blue',   color:'white' } 
  
+const [cont, setCont] = useState(0);
+
 
  
   return (
@@ -20,7 +22,24 @@ const style = { backgroundColor:'blue',   color:'white' }
      style={ style }
      
      >
-  
+       <div>
+       
+        <button onClick={() => setCont(cont + 1)}> + </button>
+      
+        <label className='spanContador'>{cont}</label>
+
+
+        <button onClick={() => setCont(cont - 1)}> - </button>
+       
+       </div>
+
+       <div>
+         <button>Agregar carrito</button>
+
+       </div>
+
+      
+
     <TituloApp/>
     <Nav/>
     <CartWidget/>
