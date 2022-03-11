@@ -20,6 +20,12 @@ useEffect(() => {
     .finally(()=> setLoading(false))
 }, [])
 
+/* Esto es el on add del btn de carrito */
+const onAdd = (cant) => {
+console.log(cant)
+
+}
+
 
 console.log(productos)
 return (
@@ -54,6 +60,10 @@ return (
                             </div>
                         </div>
 )}
+
+
+<itemCount initial = {1} stock ={10} onAdd={onAdd}/>
+
 </div>
 )}
 

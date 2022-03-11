@@ -8,30 +8,29 @@ function DivContador(){
 
 const [count, setCount] = useState(1)
 
-const handleCount = () => {
+const sumar = () => {
 
-    setCount(count+1)
+    if(count < stock){setCount(count+1)}
 
 };
-const descontarCount = () => {
-    setCount(count-1)
+const restar = () => { 
+    if (count > initial){setCount(count - 1)}
+
 };
 
 let contador = 0
 
-function mostrarCantidad (){
-    console.log(onAdd)
-}
+let stock = 10;
+let initial = 1;
 
-const init = 1
-const stockMax = 10 
+
 return(
     <div>
-       <ItemCount initial={init} stock={stockMax} onAdd={mostrarCantidad}/>
+      
 
-<button onClick={handleCount}>mas</button>
+<button onClick={sumar}>mas</button>
 <label>{ count}  </label>
-<button onClick={descontarCount}>menos</button>
+<button onClick={restar}>menos</button>
 
 <div>
          <button>Agregar carrito</button>

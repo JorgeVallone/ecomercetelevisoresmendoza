@@ -25,19 +25,6 @@ const [cont, setCont] = useState(0);
      >
 
        
-       <div>
-      
-        
-        <button onClick={() => setCont(cont + 1)}> + </button>
-      
-        <label className='spanContador'>{cont}</label>
-
-
-        <button onClick={() => setCont(cont - 1)}> - </button>
-       
-       </div>
-
-       
 
      
 
