@@ -1,0 +1,9 @@
+{
+"productos": [
+{"id": 0, "nombre": "Televisor 30", "caracteristica": "Led 30", "precio": "$30000"},
+{"id": 0, "nombre": "Televisor 40", "caracteristica": "Led 40", "precio": "$40000"},
+{"id": 0, "nombre": "Televisor 50", "caracteristica": "Led 50", "precio": "$50000"},
+{"id": 0, "nombre": "Televisor 60", "caracteristica": "Led 60", "precio": "$60000"}
+
+ ]
+}

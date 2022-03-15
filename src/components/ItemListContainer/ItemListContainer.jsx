@@ -20,6 +20,13 @@ useEffect(() => {
     .finally(()=> setLoading(false))
 }, [])
 
+useEffect (() => {
+let url = 'assets/DATA.json'
+fetch(url)
+.then(resp => resp.json() )
+.then(resp => console.log(resp))
+}, [])
+
 /* Esto es el on add del btn de carrito */
 const onAdd = (cant) => {
 console.log(cant)

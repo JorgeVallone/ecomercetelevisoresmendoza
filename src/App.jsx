@@ -6,6 +6,7 @@ import TituloApp from './components/TituloApp'
 import { useState } from 'react';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import DivContador from './components/Div';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -33,7 +34,7 @@ const [cont, setCont] = useState(0);
     <CartWidget/>
     <ItemListContainer/>
     <DivContador/>
-    
+    <ItemDetailContainer/>
     
     
     </div>
